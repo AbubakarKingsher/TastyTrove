@@ -62,7 +62,7 @@ function RecipeDetail() {
         </div>
       </div>
       {recipe ? (
-        <div className="min-h-[70vh] w-[80%] mt-72 flex mx-auto flex-wrap p-2 mb-5 justify-center">
+        <div className="min-h-[70vh] w-[80%] mt-72 flex mx-auto items-center flex-wrap p-2 mb-5 justify-center">
           <div className="h-80 w-60">
             <img
               className="h-full w-full object-cover"

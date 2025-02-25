@@ -52,7 +52,7 @@ function CategoryDetail() {
                     category.map((item, idx) => (
                         <Link key={idx} to={`/recipe/${encodeURIComponent(item.recipe.uri)}`}>
                             <motion.div
-                               
+
                                 initial="initial"
                                 whileHover="whileHover"
                                 className="card sm:h-72 h-60 sm:mb-0 mb-5 rounded-2xl sm:w-52 w-40 relative bg-white cursor-pointer overflow-hidden"
