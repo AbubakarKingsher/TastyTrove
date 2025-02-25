@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: "PoetsenOne";
+    src: url("/fonts/PoetsenOne-Regular.ttf") format("woff2");
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    background: #fafafa;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .search::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .search::-webkit-scrollbar-thumb {
+    background: #ff8f02;
+    border-radius: 10px;
+  }
+
+  .background {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3)),
+      url("../bg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .recipes {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+      url("../bg.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heading::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: #ff8f02;
+    bottom: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .marquee {
+    height: 100%;
+    width: fit-content;
+    display: inline-block;
+    animation-name: marquee;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .marquee::-webkit-scrollbar {
+    display: none;
+  }
+}
