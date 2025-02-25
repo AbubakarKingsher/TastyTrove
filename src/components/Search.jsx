@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoClose, IoSearch } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { instance } from "../axios";
 import { Link } from "react-router-dom";
 
